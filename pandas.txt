@@ -1,0 +1,34 @@
+COMO INSTALAR PANDAS
+pip install pandas
+
+PARA INICIAR PANDAS
+import pandas as pd
+
+EJEMPLO PARA SUBIR ARCHIVOS (CSB, JSON, SQL, ETC)
+pd.read_{file_type}('path')
+
+PARA IMPORTAR UN EXCEL
+pd.read_csv("aqui.csv")
+
+
+PARA PODER AÑADIR A UN DICCIONARIO UN ITEM
+
+nuevoDiccionario = {}
+nuevoDiccionario["indice"] = valor
+nuevoDiccionario.setdefault("indice",valor)
+
+PARA ELIMINAR UN ELEMENTO DE UN DICCIONARIO
+
+nuevoDiccionario.pop["indice"]
+del nuevoDiccionario["indice"]
+
+PARA MODIFICAR UN ELEMENTO DE UN DICCIONARIO
+
+nuevoDiccionario["indice"] = valornuevo
+
+ELIMINAR POR DEFECTO EL ULTIMO DICCIONARIO AGREGADO O GUARDADO
+
+nuevoDiccionario.popitem()
+
+PARA ELIMINAR TODO LOS ELEMENTOS DE UN DICCIONARIO
+nuevoDiccionario.clear()
